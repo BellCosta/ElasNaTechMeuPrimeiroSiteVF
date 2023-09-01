@@ -1,0 +1,157 @@
+@font-face{
+    font-family: 'NotoSans';
+    src: url('NotoSans-Regular.ttf');
+}
+body{
+    background-color: #F1F6F9;
+    margin: 0;
+    font-family: 'NotoSans';
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  font-size: large;
+  background-color: #394867;
+
+}
+header img{
+  max-width: 50px;
+  height: auto;
+  padding-right: 10px;
+}
+.menu ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+}
+.text_background{
+    position: relative;
+    display: inline-block;
+    padding-top: 6%;
+}
+.background{
+    max-width: 100%;
+    max-height: 70%;
+    transition: filter 0.7s ease-in-out;
+}
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: solid #ffff 2px;
+    white-space: nowrap;
+    font-size: 200%;
+    color: #ffffff;
+    opacity: 1;      
+}
+.text_background:hover .background{
+    filter: blur(4px);
+}
+.video_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.bege_color{
+    background-color: #e6e6e6;
+    border-top: #14274E solid 1px;
+}
+.blue_color{
+    background-color: #c4cddd;
+    border-top: #14274E solid 1px;
+}
+.flex{
+    display: flex;
+}
+.padding_five{
+    padding: 1% 5% 5% 5%;
+}
+.margin{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.section_two {  
+    padding:1% 5% 0% 5%;
+}
+.coluna{
+    list-style: none;
+}
+.lista{
+    padding:0% 5% 5% 5%;
+    justify-content: space-around;
+}
+.image{
+    max-width: 95%;
+    height: auto;
+}
+.a{
+    flex: 1;
+    padding: 10px;
+}
+.c{
+    margin-top: 0;
+}
+footer{
+    margin-top: 2%;
+    
+}
+footer ul li{
+    list-style: none;
+    padding-bottom: 5px;   
+}
+.footer_list{
+    background-color: #394867;
+}
+.link{
+    text-decoration: none;
+    color: #F1F6F9;
+}
+footer h2{
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #14274E;
+    color: #F1F6F9;
+}
+@media (max-width: 768px) {
+    header{
+        font-size: 1rem;
+        max-width:100%;
+    }
+    .text_background{
+        padding-top: 80px;
+    }
+    .img_text {
+      flex-direction: column;
+    }
+    .coluna_a{
+        padding-left: 0;
+    }
+    .b{
+        padding-top: 0;
+    }
+    .texto{
+        font-size: 100%;
+    }
+    .background{
+        filter: blur(4px);
+    }
+    .margin{
+        margin: 0;
+    }
+    menu ul{
+        gap: 10px;
+    }
+
+  }
